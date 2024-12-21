@@ -1,0 +1,486 @@
+// 
+{
+	"entities": {
+		"moth": {
+			"spawning": {
+				// Enables natural spawning - More info on these options: https://minecraft.fandom.com/wiki/Spawn#Java_Edition
+				"spawn_naturally": true,
+				// The spawn weight compared to other entities (typically between 6-20)
+				"spawn_weight": 10,
+				// Minimum amount of entities in spawned groups
+				"minimum_group_size": 1,
+				// Maximum amount of entities in spawned groups - Must be greater or equal to min value
+				"maximum_group_size": 3,
+				// Enter biome IDs. Supports modded biomes https://minecraft.fandom.com/wiki/Biome#Biome_IDs
+				"spawn_biomes": [
+					"terralith:cloud_forest",
+					"minecraft:old_growth_pine_taiga",
+					"minecraft:dark_forest",
+					"minecraft:swamp",
+					"terralith:wintry_forest",
+					"minecraft:old_growth_spruce_taiga",
+					"regions_unexplored:orchard",
+					"terralith:snowy_cherry_grove",
+					"regions_unexplored:fungal_fen",
+					"regions_unexplored:maple_forest",
+					"minecraft:flower_forest",
+					"terralith:orchid_swamp",
+					"regions_unexplored:silver_birch_forest",
+					"minecraft:grove",
+					"terralith:siberian_taiga",
+					"terralith:lavender_forest",
+					"terralith:skylands_autumn",
+					"terralith:yosemite_lowlands",
+					"minecraft:sparse_jungle",
+					"regions_unexplored:bamboo_forest",
+					"terralith:lush_valley",
+					"terralith:snowy_maple_forest",
+					"terralith:ice_marsh",
+					"minecraft:snowy_taiga",
+					"terralith:sakura_valley",
+					"terralith:shield",
+					"terralith:siberian_grove",
+					"minecraft:taiga",
+					"regions_unexplored:fen",
+					"terralith:alpine_grove",
+					"minecraft:windswept_forest",
+					"regions_unexplored:bayou",
+					"terralith:birch_taiga",
+					"terralith:wintry_lowlands",
+					"regions_unexplored:magnolia_woodland",
+					"terralith:moonlight_grove",
+					"terralith:lavender_valley",
+					"regions_unexplored:alpha_grove",
+					"regions_unexplored:mauve_hills",
+					"regions_unexplored:autumnal_maple_forest",
+					"terralith:moonlight_valley",
+					"terralith:skylands",
+					"terralith:snowy_shield",
+					"terralith:white_cliffs",
+					"regions_unexplored:old_growth_bayou",
+					"minecraft:old_growth_birch_forest",
+					"regions_unexplored:temperate_grove",
+					"terralith:sakura_grove",
+					"minecraft:birch_forest",
+					"minecraft:forest",
+					"terralith:forested_highlands",
+					"terralith:mirage_isles",
+					"regions_unexplored:marsh",
+					"regions_unexplored:willow_forest",
+					"terralith:skylands_spring",
+					"minecraft:mangrove_swamp",
+					"terralith:temperate_highlands",
+					"regions_unexplored:deciduous_forest"
+				],
+				"spawn_costs": {
+					// Whether to use spawn costs in spawning or not
+					"use_spawn_costs": false,
+					// Cost to spawning algorithm per entity spawned
+					"cost_per_spawn": 1,
+					// Maximum cost the spawning algorithm can accrue for this entity
+					"maximum_cost_per_biome": 10,
+					// Enter biome IDs to use these costs in. Supports modded biomes. An empty list will use spawn_biomes https://minecraft.fandom.com/wiki/Biome#Biome_IDs
+					"spawn_cost_biomes": []
+				}
+			},
+			// How many moths required to destroy a torch - Disabled if set to 0
+			"moths_to_destroy_torch": 5
+		},
+		"hidebehind": {
+			"spawning": {
+				// Enables natural spawning - More info on these options: https://minecraft.fandom.com/wiki/Spawn#Java_Edition
+				"spawn_naturally": true,
+				// The spawn weight compared to other entities (typically between 6-20)
+				"spawn_weight": 8,
+				// Minimum amount of entities in spawned groups
+				"minimum_group_size": 1,
+				// Maximum amount of entities in spawned groups - Must be greater or equal to min value
+				"maximum_group_size": 1,
+				// Enter biome IDs. Supports modded biomes https://minecraft.fandom.com/wiki/Biome#Biome_IDs
+				"spawn_biomes": [
+					"terralith:cloud_forest",
+					"minecraft:old_growth_pine_taiga",
+					"minecraft:dark_forest",
+					"terralith:wintry_forest",
+					"minecraft:old_growth_spruce_taiga",
+					"regions_unexplored:orchard",
+					"terralith:snowy_cherry_grove",
+					"regions_unexplored:maple_forest",
+					"minecraft:flower_forest",
+					"regions_unexplored:silver_birch_forest",
+					"minecraft:grove",
+					"terralith:siberian_taiga",
+					"terralith:lavender_forest",
+					"terralith:skylands_autumn",
+					"terralith:yosemite_lowlands",
+					"minecraft:sparse_jungle",
+					"regions_unexplored:bamboo_forest",
+					"terralith:lush_valley",
+					"terralith:snowy_maple_forest",
+					"minecraft:snowy_taiga",
+					"terralith:sakura_valley",
+					"terralith:shield",
+					"terralith:siberian_grove",
+					"minecraft:taiga",
+					"terralith:alpine_grove",
+					"minecraft:windswept_forest",
+					"terralith:birch_taiga",
+					"terralith:wintry_lowlands",
+					"regions_unexplored:magnolia_woodland",
+					"terralith:moonlight_grove",
+					"terralith:lavender_valley",
+					"regions_unexplored:alpha_grove",
+					"regions_unexplored:mauve_hills",
+					"regions_unexplored:autumnal_maple_forest",
+					"terralith:moonlight_valley",
+					"terralith:skylands",
+					"terralith:snowy_shield",
+					"terralith:white_cliffs",
+					"minecraft:old_growth_birch_forest",
+					"regions_unexplored:temperate_grove",
+					"terralith:sakura_grove",
+					"minecraft:birch_forest",
+					"minecraft:forest",
+					"terralith:forested_highlands",
+					"terralith:mirage_isles",
+					"regions_unexplored:willow_forest",
+					"terralith:skylands_spring",
+					"terralith:temperate_highlands",
+					"regions_unexplored:deciduous_forest"
+				],
+				// Enables biome based variant selection. This will make this entity choose variants tailored to the biome they spawn in (Only applies to natural spawns)
+				"biome_based_variants": true,
+				"spawn_costs": {
+					// Whether to use spawn costs in spawning or not
+					"use_spawn_costs": false,
+					// Cost to spawning algorithm per entity spawned
+					"cost_per_spawn": 1,
+					// Maximum cost the spawning algorithm can accrue for this entity
+					"maximum_cost_per_biome": 10,
+					// Enter biome IDs to use these costs in. Supports modded biomes. An empty list will use spawn_biomes https://minecraft.fandom.com/wiki/Biome#Biome_IDs
+					"spawn_cost_biomes": []
+				}
+			}
+		},
+		"wisp": {
+			// Allows the entity to despawn freely when no players are nearby, like vanilla monsters do
+			"can_despawn": false,
+			"spawning": {
+				// Enables natural spawning - More info on these options: https://minecraft.fandom.com/wiki/Spawn#Java_Edition
+				"spawn_naturally": true,
+				// The spawn weight compared to other entities (typically between 6-20)
+				"spawn_weight": 13,
+				// Minimum amount of entities in spawned groups
+				"minimum_group_size": 1,
+				// Maximum amount of entities in spawned groups - Must be greater or equal to min value
+				"maximum_group_size": 3,
+				// Enter biome IDs. Supports modded biomes https://minecraft.fandom.com/wiki/Biome#Biome_IDs
+				"spawn_biomes": [
+					"terralith:cloud_forest",
+					"minecraft:old_growth_pine_taiga",
+					"minecraft:dark_forest",
+					"minecraft:swamp",
+					"terralith:wintry_forest",
+					"minecraft:old_growth_spruce_taiga",
+					"regions_unexplored:orchard",
+					"terralith:snowy_cherry_grove",
+					"regions_unexplored:fungal_fen",
+					"regions_unexplored:maple_forest",
+					"minecraft:flower_forest",
+					"terralith:orchid_swamp",
+					"regions_unexplored:silver_birch_forest",
+					"minecraft:grove",
+					"terralith:siberian_taiga",
+					"minecraft:crimson_forest",
+					"terralith:lavender_forest",
+					"terralith:skylands_autumn",
+					"terralith:yosemite_lowlands",
+					"minecraft:sparse_jungle",
+					"regions_unexplored:bamboo_forest",
+					"terralith:lush_valley",
+					"terralith:snowy_maple_forest",
+					"terralith:ice_marsh",
+					"minecraft:snowy_taiga",
+					"terralith:sakura_valley",
+					"terralith:shield",
+					"terralith:siberian_grove",
+					"minecraft:taiga",
+					"regions_unexplored:fen",
+					"terralith:alpine_grove",
+					"minecraft:windswept_forest",
+					"regions_unexplored:bayou",
+					"terralith:birch_taiga",
+					"minecraft:warped_forest",
+					"terralith:wintry_lowlands",
+					"regions_unexplored:magnolia_woodland",
+					"terralith:moonlight_grove",
+					"terralith:lavender_valley",
+					"regions_unexplored:alpha_grove",
+					"regions_unexplored:mauve_hills",
+					"regions_unexplored:autumnal_maple_forest",
+					"terralith:moonlight_valley",
+					"terralith:skylands",
+					"terralith:snowy_shield",
+					"terralith:white_cliffs",
+					"regions_unexplored:old_growth_bayou",
+					"minecraft:old_growth_birch_forest",
+					"regions_unexplored:temperate_grove",
+					"terralith:sakura_grove",
+					"minecraft:birch_forest",
+					"minecraft:forest",
+					"terralith:forested_highlands",
+					"terralith:mirage_isles",
+					"regions_unexplored:marsh",
+					"regions_unexplored:willow_forest",
+					"terralith:skylands_spring",
+					"minecraft:mangrove_swamp",
+					"terralith:temperate_highlands",
+					"regions_unexplored:deciduous_forest"
+				],
+				"spawn_costs": {
+					// Whether to use spawn costs in spawning or not
+					"use_spawn_costs": false,
+					// Cost to spawning algorithm per entity spawned
+					"cost_per_spawn": 1,
+					// Maximum cost the spawning algorithm can accrue for this entity
+					"maximum_cost_per_biome": 10,
+					// Enter biome IDs to use these costs in. Supports modded biomes. An empty list will use spawn_biomes https://minecraft.fandom.com/wiki/Biome#Biome_IDs
+					"spawn_cost_biomes": []
+				}
+			},
+			// Chance of wisp being hostile (soul stealer). Chance is a percentage out of 100. 0 is never, 100 is always
+			"hostile_chance": 12
+		},
+		"hirschgeist": {
+			// Allows the entity to despawn freely when no players are nearby, like vanilla monsters do
+			"can_despawn": false,
+			"spawning": {
+				// Enables natural spawning - More info on these options: https://minecraft.fandom.com/wiki/Spawn#Java_Edition
+				"spawn_naturally": true,
+				// The spawn weight compared to other entities (typically between 6-20)
+				"spawn_weight": 2,
+				// Minimum amount of entities in spawned groups
+				"minimum_group_size": 1,
+				// Maximum amount of entities in spawned groups - Must be greater or equal to min value
+				"maximum_group_size": 1,
+				// Enter biome IDs. Supports modded biomes https://minecraft.fandom.com/wiki/Biome#Biome_IDs
+				"spawn_biomes": [
+					"terralith:cloud_forest",
+					"minecraft:old_growth_pine_taiga",
+					"minecraft:dark_forest",
+					"terralith:wintry_forest",
+					"minecraft:old_growth_spruce_taiga",
+					"regions_unexplored:orchard",
+					"terralith:snowy_cherry_grove",
+					"regions_unexplored:maple_forest",
+					"minecraft:flower_forest",
+					"regions_unexplored:silver_birch_forest",
+					"minecraft:grove",
+					"terralith:siberian_taiga",
+					"terralith:lavender_forest",
+					"terralith:skylands_autumn",
+					"terralith:yosemite_lowlands",
+					"minecraft:sparse_jungle",
+					"regions_unexplored:bamboo_forest",
+					"terralith:lush_valley",
+					"terralith:snowy_maple_forest",
+					"minecraft:snowy_taiga",
+					"terralith:sakura_valley",
+					"terralith:shield",
+					"terralith:siberian_grove",
+					"minecraft:taiga",
+					"terralith:alpine_grove",
+					"minecraft:windswept_forest",
+					"terralith:birch_taiga",
+					"terralith:wintry_lowlands",
+					"regions_unexplored:magnolia_woodland",
+					"terralith:moonlight_grove",
+					"terralith:lavender_valley",
+					"regions_unexplored:alpha_grove",
+					"regions_unexplored:mauve_hills",
+					"regions_unexplored:autumnal_maple_forest",
+					"terralith:moonlight_valley",
+					"terralith:skylands",
+					"terralith:snowy_shield",
+					"terralith:white_cliffs",
+					"minecraft:old_growth_birch_forest",
+					"regions_unexplored:temperate_grove",
+					"terralith:sakura_grove",
+					"minecraft:birch_forest",
+					"minecraft:forest",
+					"terralith:forested_highlands",
+					"terralith:mirage_isles",
+					"regions_unexplored:willow_forest",
+					"terralith:skylands_spring",
+					"terralith:temperate_highlands",
+					"regions_unexplored:deciduous_forest"
+				],
+				"spawn_costs": {
+					// Whether to use spawn costs in spawning or not
+					"use_spawn_costs": false,
+					// Cost to spawning algorithm per entity spawned
+					"cost_per_spawn": 1,
+					// Maximum cost the spawning algorithm can accrue for this entity
+					"maximum_cost_per_biome": 10,
+					// Enter biome IDs to use these costs in. Supports modded biomes. An empty list will use spawn_biomes https://minecraft.fandom.com/wiki/Biome#Biome_IDs
+					"spawn_cost_biomes": []
+				}
+			}
+		},
+		"zotzpyre": {
+			"spawning": {
+				// Enables natural spawning - More info on these options: https://minecraft.fandom.com/wiki/Spawn#Java_Edition
+				"spawn_naturally": true,
+				// The spawn weight compared to other entities (typically between 6-20)
+				"spawn_weight": 30,
+				// Minimum amount of entities in spawned groups
+				"minimum_group_size": 1,
+				// Maximum amount of entities in spawned groups - Must be greater or equal to min value
+				"maximum_group_size": 1,
+				// Enter biome IDs. Supports modded biomes https://minecraft.fandom.com/wiki/Biome#Biome_IDs
+				"spawn_biomes": [
+					"regions_unexplored:towering_cliffs",
+					"terralith:cloud_forest",
+					"terralith:haze_mountain",
+					"terralith:mountain_steppe",
+					"terralith:amethyst_canyon",
+					"terralith:highlands",
+					"minecraft:old_growth_pine_taiga",
+					"regions_unexplored:bioshroom_caves",
+					"terralith:scarlet_mountains",
+					"minecraft:dark_forest",
+					"minecraft:swamp",
+					"terralith:wintry_forest",
+					"terralith:emerald_peaks",
+					"minecraft:old_growth_spruce_taiga",
+					"regions_unexplored:ashen_woodland",
+					"terralith:snowy_cherry_grove",
+					"terralith:volcanic_crater",
+					"minecraft:snowy_plains",
+					"minecraft:flower_forest",
+					"minecraft:eroded_badlands",
+					"regions_unexplored:gravel_beach",
+					"terralith:orchid_swamp",
+					"regions_unexplored:silver_birch_forest",
+					"regions_unexplored:sparse_rainforest",
+					"minecraft:grove",
+					"terralith:siberian_taiga",
+					"minecraft:windswept_hills",
+					"regions_unexplored:cold_boreal_taiga",
+					"terralith:lavender_forest",
+					"terralith:yosemite_lowlands",
+					"regions_unexplored:mountains",
+					"minecraft:bamboo_jungle",
+					"minecraft:sparse_jungle",
+					"regions_unexplored:bamboo_forest",
+					"terralith:ice_marsh",
+					"terralith:jungle_mountains",
+					"minecraft:snowy_taiga",
+					"terralith:alpine_highlands",
+					"terralith:snowy_badlands",
+					"regions_unexplored:sparse_redwoods",
+					"regions_unexplored:arid_mountains",
+					"terralith:tropical_jungle",
+					"terralith:desert_spires",
+					"terralith:sakura_valley",
+					"terralith:yellowstone",
+					"terralith:siberian_grove",
+					"regions_unexplored:bayou",
+					"minecraft:stony_shore",
+					"terralith:wintry_lowlands",
+					"minecraft:stony_peaks",
+					"regions_unexplored:redwoods",
+					"minecraft:snowy_beach",
+					"regions_unexplored:boreal_taiga",
+					"regions_unexplored:alpha_grove",
+					"regions_unexplored:mauve_hills",
+					"regions_unexplored:autumnal_maple_forest",
+					"minecraft:windswept_savanna",
+					"terralith:caldera",
+					"minecraft:ice_spikes",
+					"terralith:skylands",
+					"terralith:amethyst_rainforest",
+					"minecraft:beach",
+					"regions_unexplored:golden_boreal_taiga",
+					"regions_unexplored:temperate_grove",
+					"terralith:skylands_spring",
+					"regions_unexplored:deciduous_forest",
+					"terralith:rocky_mountains",
+					"terralith:skylands_summer",
+					"regions_unexplored:grassy_beach",
+					"terralith:valley_clearing",
+					"regions_unexplored:orchard",
+					"minecraft:meadow",
+					"regions_unexplored:fungal_fen",
+					"regions_unexplored:maple_forest",
+					"terralith:volcanic_peaks",
+					"terralith:rocky_jungle",
+					"minecraft:jungle",
+					"terralith:skylands_autumn",
+					"regions_unexplored:blackwood_taiga",
+					"terralith:fractured_savanna",
+					"terralith:lush_valley",
+					"terralith:snowy_maple_forest",
+					"terralith:bryce_canyon",
+					"minecraft:cherry_grove",
+					"terralith:frozen_cliffs",
+					"terralith:painted_mountains",
+					"terralith:shield",
+					"minecraft:taiga",
+					"terralith:ashen_savanna",
+					"regions_unexplored:fen",
+					"terralith:alpine_grove",
+					"minecraft:windswept_forest",
+					"terralith:basalt_cliffs",
+					"terralith:birch_taiga",
+					"regions_unexplored:magnolia_woodland",
+					"regions_unexplored:eucalyptus_forest",
+					"regions_unexplored:rainforest",
+					"terralith:desert_canyon",
+					"terralith:skylands_winter",
+					"terralith:moonlight_grove",
+					"regions_unexplored:frozen_pine_taiga",
+					"terralith:lavender_valley",
+					"terralith:gravel_beach",
+					"terralith:rocky_shrubland",
+					"terralith:gravel_desert",
+					"regions_unexplored:tropics",
+					"regions_unexplored:icy_heights",
+					"terralith:moonlight_valley",
+					"terralith:snowy_shield",
+					"terralith:white_cliffs",
+					"regions_unexplored:old_growth_bayou",
+					"regions_unexplored:highland_fields",
+					"minecraft:old_growth_birch_forest",
+					"minecraft:windswept_gravelly_hills",
+					"terralith:sakura_grove",
+					"minecraft:birch_forest",
+					"minecraft:forest",
+					"terralith:forested_highlands",
+					"terralith:mirage_isles",
+					"regions_unexplored:marsh",
+					"regions_unexplored:pine_taiga",
+					"regions_unexplored:willow_forest",
+					"regions_unexplored:ancient_delta",
+					"minecraft:mangrove_swamp",
+					"minecraft:snowy_slopes",
+					"regions_unexplored:pine_slopes",
+					"terralith:temperate_highlands",
+					"terralith:cave/underground_jungle",
+					"minecraft:jagged_peaks",
+					"minecraft:frozen_peaks"
+				],
+				"spawn_costs": {
+					// Whether to use spawn costs in spawning or not
+					"use_spawn_costs": false,
+					// Cost to spawning algorithm per entity spawned
+					"cost_per_spawn": 1,
+					// Maximum cost the spawning algorithm can accrue for this entity
+					"maximum_cost_per_biome": 10,
+					// Enter biome IDs to use these costs in. Supports modded biomes. An empty list will use spawn_biomes https://minecraft.fandom.com/wiki/Biome#Biome_IDs
+					"spawn_cost_biomes": []
+				}
+			}
+		}
+	}
+}
